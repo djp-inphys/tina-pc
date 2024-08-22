@@ -1,0 +1,119 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=Windows-1252">
+</head>
+<body>
+<pre>
+<table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>
+Build Log
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+<h3>------- Build started: Project: file, Configuration: Dynamic_Debug|Win32 -------
+</h3>
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Command Lines
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating temporary file "c:\Software\Klstuff\tina\lib-pc\file\WinDebug\RSP000005.rsp" with contents
+[
+/Od /G5 /I "C:\Software\KLSTUFF\tina\include" /I "C:\Software\KLSTUFF\tina\lib-pc\include" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_AFXEXT" /D "_COMPLEX_DEFINED" /D "__STRICT_ANSI__" /D "_PCC" /D "_DLL" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /FD /EHsc /MDd /Fp".\WinDebug/file.pch" /Fo".\WinDebug/" /Fd".\WinDebug/" /FR".\WinDebug/" /W3 /c /ZI
+".\wisp_write.c"
+".\view_prms.c"
+".\raw_read_fd.c"
+".\raw_io.c"
+".\matrix_w.c"
+".\matrix_r.c"
+".\iff_io.c"
+".\geom3_wrt.c"
+".\geom3_read.c"
+".\geom2_wrt.c"
+".\geom2_read.c"
+".\file_util.c"
+".\file_io.c"
+".\ffg_write.c"
+".\ffg_read.c"
+".\ffg_new_wrt.c"
+".\ffg_new_read.c"
+".\edges_w.c"
+".\edges_read.c"
+".\distort_w.c"
+".\distort_r.c"
+".\covar_w.c"
+".\covar_r.c"
+".\cam_io.c"
+".\cam_g3_rd.c"
+".\aiff_io.c"
+]
+Creating command line "cl.exe @"c:\Software\Klstuff\tina\lib-pc\file\WinDebug\RSP000005.rsp" /nologo"
+Creating temporary file "c:\Software\Klstuff\tina\lib-pc\file\WinDebug\RSP000006.rsp" with contents
+[
+/OUT:".\WinDebug/file.dll" /INCREMENTAL:NO /NOLOGO /DLL /DEF:".\file.def" /DEBUG /PDB:".\WinDebug/file.pdb" /SUBSYSTEM:WINDOWS /IMPLIB:".\WinDebug/file.lib" /MACHINE:X86 \tina\lib-pc\vision\WinDebug\vision.lib
+"\Software\Klstuff\tina\lib-pc\vision\math.lib"
+"\Software\Klstuff\tina\lib-pc\math\sys.lib"
+".\vision.lib"
+".\WinDebug\aiff_io.obj"
+".\WinDebug\cam_g3_rd.obj"
+".\WinDebug\cam_io.obj"
+".\WinDebug\covar_r.obj"
+".\WinDebug\covar_w.obj"
+".\WinDebug\distort_r.obj"
+".\WinDebug\distort_w.obj"
+".\WinDebug\edges_read.obj"
+".\WinDebug\edges_w.obj"
+".\WinDebug\ffg_new_read.obj"
+".\WinDebug\ffg_new_wrt.obj"
+".\WinDebug\ffg_read.obj"
+".\WinDebug\ffg_write.obj"
+".\WinDebug\file_io.obj"
+".\WinDebug\file_util.obj"
+".\WinDebug\geom2_read.obj"
+".\WinDebug\geom2_wrt.obj"
+".\WinDebug\geom3_read.obj"
+".\WinDebug\geom3_wrt.obj"
+".\WinDebug\iff_io.obj"
+".\WinDebug\matrix_r.obj"
+".\WinDebug\matrix_w.obj"
+".\WinDebug\raw_io.obj"
+".\WinDebug\raw_read_fd.obj"
+".\WinDebug\view_prms.obj"
+".\WinDebug\wisp_write.obj"
+]
+Creating command line "link.exe @"c:\Software\Klstuff\tina\lib-pc\file\WinDebug\RSP000006.rsp""
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Output Window
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Compiling...
+wisp_write.c
+view_prms.c
+raw_read_fd.c
+raw_io.c
+matrix_w.c
+matrix_r.c
+iff_io.c
+geom3_wrt.c
+geom3_read.c
+geom2_wrt.c
+geom2_read.c
+file_util.c
+c:\Software\KLSTUFF\tina\lib-pc\file\file_util.c(116) : warning C4554: '&' : check operator precedence for possible error; use parentheses to clarify precedence
+file_io.c
+ffg_write.c
+ffg_read.c
+ffg_new_wrt.c
+ffg_new_read.c
+edges_w.c
+edges_read.c
+distort_w.c
+Generating Code...
+Compiling...
+distort_r.c
+covar_w.c
+covar_r.c
+cam_io.c
+cam_g3_rd.c
+aiff_io.c
+Generating Code...
+Linking...
+LINK : fatal error LNK1181: cannot open input file '\tina\lib-pc\vision\WinDebug\vision.lib'
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Results
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+Build log was saved at "file://c:\Software\Klstuff\tina\lib-pc\file\WinDebug\BuildLog.htm"
+file - 1 error(s), 1 warning(s)</pre></table><table   width=100% height=20 bgcolor=#CFCFE5><tr><td><font face=arial size=+2>
+</font></table></body></html>

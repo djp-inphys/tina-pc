@@ -1,0 +1,1155 @@
+; vision.def : Declares the module parameters for the DLL.
+
+LIBRARY      VISION
+DESCRIPTION  'VISION Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+	;
+	; J:\SRC\VISION\IMPROC\im_fourier.c
+	im_fft
+	im_fft_inverse
+	im_power_spectrum
+	; J:\SRC\VISION\CURVE2\conic2.c
+	conic2_string
+	; J:\SRC\VISION\CONE\cone.c
+	cone_alloc
+	cone_make
+	cone_free
+	cone_copy
+	cone_point
+	; J:\SRC\VISION\CAMERA\rect.c
+	rectify_pos
+	rectify_orient
+	rectify_pos_and_dir
+	edge_apply_rect
+	edge_apply_derect
+	edge_add_rect_prop
+	er_add_rectpos_prop
+	er_rectify
+	er_derectify
+	; J:\SRC\VISION\GEOMSTAT\CONSTRAINT\state_trns.c
+	line3_transf
+	state_transf
+	; J:\SRC\VISION\CALIB\ecal_smplx.c
+	cam_cal_triv_smplx_params_set
+	cam_cal_triv_simplex
+	cal_trivedi_invcovar
+	; J:\SRC\VISION\STEREO\choose_wta.c
+	matches_not_unique
+	matches_not_ordered
+	choose_wta
+	choose_wta_matches
+	; J:\SRC\VISION\IMPROC\im_aratio.c
+	imf_aratio
+	imf_bratio
+	; J:\SRC\VISION\MATCH\match_es.c
+	es_init_mlist
+	es_get_list_of_matches
+	; J:\SRC\VISION\EDGE\bnd_region.c
+	es_bounding_region
+	strings_bounding_region
+	er_bounding_region
+	; J:\SRC\VISION\CURVE3\es_string3.c
+	es_par_proj_to_plane
+	cv_approx3
+	es_build_string3
+	es_build_string4
+	; J:\SRC\VISION\IMPROC\im_combine.c
+	im_combine
+	imf_combine
+	imf_combine_inplace
+	imi_sum
+	imf_sum
+	imz_sum
+	im_sum
+	imi_diff
+	imf_diff
+	imz_diff
+	im_diff
+	imf_wsum
+	imf_sumsq
+	imi_prod
+	imf_prod
+	imz_prod
+	im_prod
+	imf_div
+	imz_div
+	im_div
+	; J:\SRC\VISION\GEOMSTAT\STATE\state_tina.c
+	state_set_cov_scalar
+	state_set_cov_point2
+	state_set_cov_line2
+	state_set_cov_point3
+	state_set_cov_line3
+	state_set_cov_plane
+	state_set_cov_transf3
+	state_set_infcov
+	state_tinacov_line3
+	state_add_tina
+	; J:\SRC\VISION\GEOMSTAT\KALMAN\kalman.c
+	kalman_verbose_get
+	kalman_verbose_set
+	vector2_free
+	vector2_format
+	accum_smatrix2_symtensor
+	kalman
+	; J:\SRC\VISION\GEOMSTAT\GEOM\gstat_sclr.c
+	scalar_correct
+	; J:\SRC\VISION\STEREO\supp_fig.c
+	es_figural_supp
+	; J:\SRC\VISION\STEREO\choose.c
+	es_choose_best_matches
+	choose_these_matches
+	; J:\SRC\VISION\SCALAR\scalar.c
+	scalar_alloc
+	scalar_make
+	scalar_free
+	scalar_copy
+	scalar_number
+	; J:\SRC\VISION\PLANE\plane.c
+	plane_alloc
+	plane_make
+	plane_free
+	plane_copy
+	plane_number
+	plane_point_on_plane
+	; J:\SRC\VISION\IMPROC\im_gauss.c
+	imf_gauss
+	; J:\SRC\VISION\IMPROC\im_apply.c
+	im_arg
+	im_im
+	im_minus
+	im_mod
+	im_re
+	imf_apply
+	imf_apply_inplace
+	imf_dfilter
+	imf_mod
+	imi_minus
+	imi_mod
+	imz_minus
+	imz_mod
+	imz_arg
+	imz_re
+	imz_im
+	imz_phase
+	im_phase
+	im_cis
+	imi_sqr
+	imz_sqr
+	im_sqr
+	imz_times
+	im_times
+	im_conj
+	imf_minus
+	imf_power
+	imf_rm_dc
+	imf_sqr
+	imf_times
+	; J:\SRC\VISION\SPLINE\knots.c
+	str2_get_knots
+	str3_get_knots
+	; J:\SRC\VISION\GEOM\geom_fmt.c
+	geom_format
+	; J:\SRC\VISION\CAMERA\proj.c
+	cam_proj
+	cam_ray
+	; J:\SRC\VISION\CONE\cone_trans.c
+	cone_transform
+	; J:\SRC\VISION\CAMERA\camera.c
+	cam_alloc
+	cam_comp_default_rects
+	cam_make
+	cam_copy
+	cam_scale_to_image
+	cam_free
+	; J:\SRC\VISION\POINT3\pnt3_trans.c
+	point3_transform
+	point3_coincident
+	point3_within_error
+	; J:\SRC\VISION\GEOM\geom_trans.c
+	geom_transform
+	; J:\SRC\VISION\CALIB\cam_error.c
+	camerror
+	rad_camerror
+	triv_camerror
+	cam_reg
+	stereo_reg
+	S_array
+	; J:\SRC\VISION\STEREO\disp_range.c
+	disp_range_set
+	disp_range_get
+	disp_range_at_pos2
+	disp_range_fix_disparity
+	disp_range_build
+	er_disp_range_build
+	; J:\SRC\VISION\GEOMSTAT\CONSTRAINT\state_orth.c
+	orth_lines
+	orth_line_plane
+	orth_planes
+	state_orth
+	; J:\SRC\VISION\GEOM\geom_copy.c
+	geom_copy
+	geom_update_copy
+	; J:\SRC\VISION\CONIC\conic.c
+	conic_alloc
+	conic_make
+	conic_copy
+	conic_prop_get
+	conic_free
+	; J:\SRC\VISION\CONIC\con_stat.c
+	conic_stat_alloc
+	conic_stat_copy
+	conic_stat_free
+	conic_stat_init
+	conic_correct
+	conic_correct_copy
+	; J:\SRC\VISION\STEREO\match_epi.c
+	ss_match_weight
+	es_add_new_matches
+	es_match_epi_pair
+	er_set_matches
+	es_add_to_mlist
+	em_format
+	em_list_format
+	; J:\SRC\VISION\GEOMSTAT\GEOM\gstat_ln3.c
+	line3_basis
+	line3_correct
+	; J:\SRC\VISION\CALIB\cal_util.c
+	leftpix_get
+	rightpix_get
+	world_get
+	calib_update
+	; J:\SRC\VISION\STEREO\match_supp.c
+	match_add_supp_prop
+	es_add_supp_prop
+	; J:\SRC\VISION\POINT3\pnt3_fmt.c
+	point3_format
+	; J:\SRC\VISION\IMPROC\im_conv_1d.c
+	im_conv_h
+	im_conv_v
+	im_conv_separable
+	; J:\SRC\VISION\SPLINE\kws.c
+	kwsnake_eval
+	kwsnake_make
+	kwsnake_copy
+	kwsnake_free
+	kwsnake_interpolate_list
+	kwsnake_from_ucbs2
+	kwsnake_of_es
+	es_of_kwsnake
+	kws_length
+	; J:\SRC\VISION\LINE3\fitline3.c
+	line3_disp_from2d
+	line3_from_line2
+	; J:\SRC\VISION\LINE2\linearprox.c
+	linear_prox
+	linear_string
+	linear_strings
+	; J:\SRC\VISION\CURVE2\curvinvar.c
+	curv_invar_ratio
+	curv_invar_ratio_range
+	curv_invar_surf
+	curv_invar_ratio_dds
+	curv_invar_ratio_range_dds
+	curv_invar_surf_dds
+	curv_invar_closest
+	curv_invar_matches
+	; J:\SRC\VISION\PLANE\transplane.c
+	plane_transform
+	plane_coincident
+	; J:\SRC\VISION\LINE2\fitline2.c
+	fit2_point_on_line
+	fit2_all_points_on_line
+	fit2_points_off_line
+	fit2_findstart
+	fit2_findend
+	fit2_regres
+	fit2_regres_it
+	line2_fit
+	line2_best_fit
+	line2_fit_and_grow
+	line2_between
+	; J:\SRC\VISION\TRANSF3\tr3_fmt.c
+	transf3_format
+	; J:\SRC\VISION\MATCHER\iso_error.c
+	iso_set_defaults
+	iso_alloc
+	geom_add_iso_prop
+	geom_addifnp_iso_prop
+	geom_set_iso_default_error
+	geom_set_iso_zero_error
+	; J:\SRC\VISION\IMPROC\im_surf.c
+	terrain_data_free
+	terrain_alloc
+	terrain_copy
+	terrain_make
+	im_surface
+	; J:\SRC\VISION\GEOMSTAT\GEOM\gstat_tf3.c
+	transf3_basis
+	transf3_correct
+	; J:\SRC\VISION\POINT3\point3.c
+	point3_alloc
+	point3_make
+	point3_free
+	point3_copy
+	point3_number
+	; J:\SRC\VISION\MATCHER\mat_cliche.c
+	match_cliche_make
+	match_cliche_free
+	; J:\SRC\VISION\CURVE2\splines.c
+	str_ics2
+	; J:\SRC\VISION\SCALAR\sclr_fmt.c
+	scalar_format
+	; J:\SRC\VISION\GEOMSTAT\STATE\state_fmt.c
+	state_format_one
+	state_format
+	state_cov_format
+	state_cov_format_one
+	state_cov_format_two
+	state_corr_format_one
+	state_corr_format_two
+	state_basis_format
+	state_basis_format_one
+	; J:\SRC\VISION\GEOM\geom_props.c
+	geom_prop_get
+	geom_prop_update_get
+	geom_prop_add
+	geom_prop_addifnp
+	geom_add_image_pos_prop
+	; J:\SRC\VISION\GEOM\geom_free.c
+	geom_free
+	; J:\SRC\VISION\CAMERA\par_cam.c
+	parcam_alloc
+	parcam_make
+	parcam_scaled_make
+	pcam_free
+	; J:\SRC\VISION\CALIB\h_v_lines.c
+	colinear_2Dlist
+	; J:\SRC\VISION\SPLINE\kws_run.c
+	kwsnake_correct
+	kwsnake_correct_maxstep
+	kwsnake_correct_fullstep
+	kwsnake_orth
+	kwsnake_external_step_orth
+	kwsnake_external_step_from_pot
+	kwsnake_internal_step_orth
+	kwsnake_dt_step
+	kwsnake_dt_step2
+	kwsnake_dist
+	kwsnake_dt_run
+	kwsnake_dt_run2
+	kwsnake_internal_step
+	kwsnake_step_from_pot
+	kwsnake_reorth
+	kwsnake_orth_step
+	kwsnake_step_orth
+	kwsnake_inflate
+	kwsnake_grow
+	kwsnake_region
+	; J:\SRC\VISION\CURVE2\string2.c
+	str2_of_curve2
+	; J:\SRC\VISION\IMPROC\im_smooth.c
+	im_tsmooth
+	; J:\SRC\VISION\INDEX\sindex.c
+	sx_alloc
+	sx_free
+	; J:\SRC\VISION\GEOMSTAT\GEOM\gstat_pln.c
+	plane_basis
+	plane_correct
+	; J:\SRC\VISION\CURVE2\conicprox.c
+	conic_prox_init_sample_set
+	conic_grow_string
+	conic_grow
+	conic_check
+	conic_check_list
+	conic_count
+	conic_prox
+	conic_string
+	conic_strings
+	; J:\SRC\VISION\MATCH\dp_mlist.c
+	dp_mlist_build
+	form_valid_dp_array
+	mlist_set_dp_indices
+	dp_mlist
+	; J:\SRC\VISION\LINE2\polyprox.c
+	poly_prox
+	poly_string
+	poly_strings
+	; J:\SRC\VISION\IMPROC\im_median.c
+	med3by3
+	med3by3f
+	imc_median
+	imi_median
+	imf_median
+	imz_median
+	im_median
+	; J:\SRC\VISION\CORNER\st_mat_cnr.c
+	set_st_corner_matches
+	set_st_corner_match
+	find_temporal_match
+	; J:\SRC\VISION\STEREO\setindex.c
+	strings_set_sindex
+	er_set_sindex
+	es_apply_to_sindex_strings
+	er_apply_through_sindex
+	string_of_sindex_strings
+	; J:\SRC\VISION\IMPROC\im_warp.c
+	imf_warp
+	im_warp
+	roi_rectify
+	im_rectify
+	; J:\SRC\VISION\CURVE3\string3.c
+	str_to_curve3_sep_set
+	str_to_curve3_sep_get
+	str3_of_curve3
+	; J:\SRC\VISION\CURVE3\str3_tris.c
+	dist_to_pos3
+	tri3_make
+	str3_triangulate
+	str2_triangulate3
+	; J:\SRC\VISION\GEOMSTAT\CAMERA\gstat_cam.c
+	cam_f
+	cam_pix
+	left_origin
+	right_origin
+	; J:\SRC\VISION\IMPROC\im_morph.c
+	morph_spere
+	imf_dilate
+	imf_erode
+	; J:\SRC\VISION\TRANSF3\transf3.c
+	transf3_alloc
+	transf3_make
+	transf3_free
+	transf3_copy
+	transf3_number
+	; J:\SRC\VISION\INDEX\rindex.c
+	rx_alloc
+	rx_free_links
+	rx_free
+	; J:\SRC\VISION\EDGE\edge.c
+	edge_alloc
+	econn_alloc
+	edge_free
+	econn_free
+	edge_copy
+	edge_sindex_prop_get
+	edge_prop_get
+	edge_image_pos
+	edge_set_type_remove_me
+	edge_rm_on_remove_me
+	edge_save_pos_prop
+	edge_get_pos_prop
+	edge_print
+	edge_format
+	; J:\SRC\VISION\MATCHER\mat_geom.c
+	matcher_set_lthres
+	matcher_get_lthres
+	smm_filter
+	smm_pwr_allowed_type
+	smm_geom_position
+	smm_geom_separation
+	smm_geom_sepsq
+	smm_geom_parallel
+	; J:\SRC\VISION\GEOM\geom_alloc.c
+	geom_alloc
+	; J:\SRC\VISION\CONIC\con_klmn.c
+	conic_nlsq
+	conic_ekf
+	conic_bckf
+	; J:\SRC\VISION\CONIC\con_fltr.c
+	conic_filter_get
+	conic_filter_set
+	conic_sample_get
+	conic_sample_set
+	conic_var_get
+	conic_var_set
+	conic_iter_get
+	conic_iter_set
+	conic_filter
+	conic_ellipse_filter
+	conic_fit
+	conic_ellipse_fit
+	; J:\SRC\VISION\TRANSFORM\trnslation.c
+	mlist_comp_translate_vec3
+	mlist_comp_translate_all
+	mlist_comp_translate_pos3
+	; J:\SRC\VISION\EDGE\edgerect.c
+	er_apply_to_all_edges
+	er_apply_to_all_strings
+	es_apply_to_all_edges
+	er_rm_edges
+	er_free
+	er_get_edge
+	er_put_edge
+	er_closest
+	er_add_edge
+	er_set_row_index
+	; J:\SRC\VISION\GEOM\geom_error.c
+	geom_within_error
+	geom_within_error_update
+	geom3_all_matches_under_trans
+	; J:\SRC\VISION\TRANSFORM\rotation.c
+	mlist_comp_rot_vec3
+	mlist_comp_rot_pos3
+	mlist_comp_rot_all
+	; J:\SRC\VISION\IMPROC\im_lsf.c
+	imf_lsf_smooth
+	imf_lsf_smooth_quad
+	; J:\SRC\VISION\GEOM\geom_negate.c
+	geom_negate
+	geom_negative
+	; J:\SRC\VISION\STEREO\mat_fast.c
+	er_string_matcher
+	; J:\SRC\VISION\LINE2\line2_fmt.c
+	line2_format
+	; J:\SRC\VISION\GEOMSTAT\GEOM\gstat_geom.c
+	geom_df
+	geom_basis
+	geom_set_infcov
+	geom_correct
+	geom_rank
+	geom_reorder
+	geom_angle
+	geom_dist
+	; J:\SRC\VISION\EDGE\str2.c
+	str2_centroid
+	str2_translate
+	str2_rts
+	str2_area
+	str2_eigen
+	str2_orientation
+	str2_copy
+	dd2_arc_length
+	str2_arc_length
+	dd2_ang_length
+	str2_ang_length
+	str2_get_vec2_knots
+	str2_point
+	str2_get_interp_vec2_knots
+	str2_fill
+	str2_free
+	; J:\SRC\VISION\LINE3\line3_trns.c
+	line3_transform
+	overlap_length
+	line3_on_and_overlap
+	line3_coincident
+	line3_within_error
+	; J:\SRC\VISION\CALIB\cal_smplx.c
+	cam_cal_smplx_params_set
+	cam_cal_simplex
+	; J:\SRC\VISION\GEOMSTAT\CONSTRAINT\state_par.c
+	par_line3s
+	par_line3_plane
+	par_planes
+	state_par
+	; J:\SRC\VISION\GEOM\geom_hull.c
+	geom_hull_get
+	; J:\SRC\VISION\CONIC\conic_5pt.c
+	conic_circ_3pt
+	conic_5pt
+	conic_ellipse_5pt
+	conic_3pt
+	conic_ellipse_3pt
+	ddstr_conic_5pt
+	ddstr_conic_ellipse_5pt
+	ddstr_conic_circ_3pt
+	ddstr_5pts_choose
+	line_error
+	line_errors_check
+	; J:\SRC\VISION\MATCH\dynamic.c
+	dp_solution
+	dp_accum
+	; J:\SRC\VISION\IMPROC\smooth_1d.c
+	smooth_1d
+	smooth_1d_sym
+	conv_1d
+	; J:\SRC\VISION\CURVE3\conic3.c
+	conic3_alloc
+	conic3_copy
+	conic3_free
+	conic3_make
+	conic3_transform
+	conic3_point
+	conic3_param
+	conic3_parameter_offset
+	conic3_overlap
+	conic3_coincident
+	conic3_within_error
+	conic3_negate
+	conic3_negative
+	conic_par_proj_to_plane
+	conic3_shift_origin_to_center
+	conic3_from_conic2
+	conic3_format
+	; J:\SRC\VISION\CAMERA\cam_aim.c
+	trans3_from_aim
+	cam_from_aim
+	; J:\SRC\VISION\IMPROC\corner.c
+	corner2
+	corner
+	cornim
+	cornim2
+	corner_locate
+	; J:\SRC\VISION\CORNER\s_mat_cnr.c
+	stereo_corner_match
+;
+	rectpos
+	stereo_left_match
+	stereo_right_match
+	left_search_func
+	right_search_func
+	set_stereo_corner_matches
+	rm_stereo_corner_matches
+	set_stereo_corner_match
+	; J:\SRC\VISION\CONIC\con_util.c
+	conic_normalise
+	conic_eval
+	conic_grad
+	conic_discrim
+	conic_eigen
+	conic_lambda
+	ellipse_point
+	hyperbola_point
+	ellipse_param
+	hyperbola_param
+	hyperbola_branch
+	conic_approx_sqrdist
+	conic_setup
+	conic_point
+	conic_param
+	conic_set_ends
+	conic_approx_length
+	conic_param_length
+	ellipse_format
+	hyperbola_format
+	conic_format
+	conic_aratio
+	; J:\SRC\VISION\STEREO\match_dp.c
+	stereo_dp_max_size_set
+	stereo_dp_max_size_get
+	match_epi_dprog
+	choose_ordered_matches
+	support_ordered_matches
+	; J:\SRC\VISION\IMPROC\im_sample.c
+	imf_sample
+	imf_halve
+	; J:\SRC\VISION\CORNER\match_cnr.c
+	get_corner_matches
+	apply_func_to_windex
+	get_corner_match
+	add_match_to_props
+	rm_match_from_props
+	rm_corner_matches
+	get_matches_list
+	add_patch_to_props
+	corner_correlation
+	good_corner
+	correlation
+	get_fixed_match
+	get_good_match
+	; J:\SRC\VISION\CAMERA\cam_dstrt.c
+	radial_distort
+	radial_correct
+	cam_correct
+	cam_distort_copy
+	edge_apply_corr
+	edge_add_corr_prop
+	er_add_corrpos_prop
+	er_correct
+	; J:\SRC\VISION\LINE2\line2_rect.c
+	line2_rectify
+	line2_proj
+	; J:\SRC\VISION\LINE2\line2_coln.c
+	colinear_2Dlines
+	; J:\SRC\VISION\MATCHER\mat_match.c
+	matcher_set_length_ratio
+	matcher_get_length_ratio
+	matcher_set_max_rot
+	matcher_get_max_rot
+	matcher_set_max_trans
+	matcher_get_max_trans
+	matcher_set_use_transf_thres
+	smm_good_match
+	smm_reasonable_match
+	smm_good_matches
+	smm_match_strength
+	smm_mlist_goodness
+	; J:\SRC\VISION\GEOMSTAT\STATE\state_hull.c
+	state_hull
+	; J:\SRC\VISION\IMPROC\prof1.c
+	prof1_alloc
+	prof1_free
+	prof1_reverse
+	; J:\SRC\VISION\GEOMSTAT\CONSTRAINT\state_extd.c
+	extend_line_to_point
+	extend_line_to_line
+	extend_line_to_plane
+	state_extend
+	; J:\SRC\VISION\CALIB\conv_quat.c
+	conv_rot_to_quat
+	conv_quat_to_rot
+	; J:\SRC\VISION\MATCHER\matcher.c
+	smm_set
+	smm_consistent_matches
+	smm_run
+	; J:\SRC\VISION\CURVE3\affine_cv.c
+	affine_curve
+	affine_curve_it
+	plane_from_affine
+	plane_curve_ls
+	; J:\SRC\VISION\IMPROC\im_ptr.c
+	im_ptr_apply
+	im_pp_apply
+	im_pf_apply
+	im_ppp_combine
+	im_ffp_combine
+	im_fpp_combine
+	im_ppf_combine
+	im_vec2_free
+	im_mat2_free
+	im_vec2
+	im_vec2_sum
+	im_vec2_diff
+	im_vec2_dot
+	im_vec2_cross
+	im_mat2_vprod
+	im_mat2_sprod
+	im_mat2_inverse
+	im_mat2_of_cols
+	im_mat2_of_rows
+	im_vec2_grad
+	im_mat2_grad_hessian
+	im_mat2_hessian
+	im_mat2_det
+	im_vec2_x
+	im_vec2_y
+	im_mat2_xx
+	im_mat2_xy
+	im_mat2_yx
+	im_mat2_yy
+	; J:\SRC\VISION\EDGE\linkedges.c
+	er_find_edge_strings
+	er_find_simple_edge_strings
+	er_specific_edge_strings
+	; J:\SRC\VISION\CONIC\con_rect.c
+	conic_rectify
+	conic_proj
+	; J:\SRC\VISION\PLANE\plane_fmt.c
+	plane_format
+	; J:\SRC\VISION\GEOMSTAT\GEOM\gstat_pnt2.c
+	point2_basis
+	point2_correct
+	; J:\SRC\VISION\MATCHER\pwrte.c
+	pwrte_alloc
+	pwrte_free
+	pwtre_table_free
+	pwrte_point_to_point_make
+	pwrte_point_to_line_make
+	pwrte_point_to_conic_make
+	pwrte_line_to_line_make
+	pwrte_conic_to_line_make
+	pwrte_line_to_conic_make
+	pwrte_conic_to_conic_make
+	pwrte_make
+	point_to_point_pwrte_compatible
+	point_to_vec_pwrte_compatible
+	line_to_line_pwrte_compatible
+	line_to_conic_pwrte_compatible
+	conic_to_conic_pwrte_compatible
+	pwrte_compatible
+	pwrte_set_entry
+	pwrte_build_full_table
+	; J:\SRC\VISION\IMPROC\im_grad.c
+	imf_grad_h
+	imf_grad_v
+	; J:\SRC\VISION\POINT2\pnt2_fmt.c
+	point2_format
+	; J:\SRC\VISION\IMPROC\im_deriv.c
+	imf_diffx
+	imf_diffy
+	im_grad
+	im_hessian
+	imf_laplacian
+	imf_sqrgrad
+	imf_matop
+	imf_ddn
+	imf_ddt
+	imf_curv
+	; J:\SRC\VISION\IMPROC\nonmax.c
+	nonmaxsup
+	; J:\SRC\VISION\SPLINE\ucbs2.c
+	ucbs2_basis_val
+	ucbs2_eval
+	ucbs_set_resolution
+	ucbs2_closest_param_to
+	ucbs2_param
+	ucbs2_make
+	ucbs2_copy
+	ucbs2_free
+	ucbs2_end_conditions
+	ucbs2_interpolate
+	ucbs2_delete_control
+	ucbs2_add_control
+	ucbs2_add_point
+	ucbs2_delete_point
+	ucbs2_replace_point
+	ucbs2_interpolate_list
+	ucbs2_interpolate_kwsnake
+	ucbs2_of_str2
+	str2_of_ucbs2
+	; J:\SRC\VISION\MATCHER\mat_con.c
+	smm_con_with_mlist
+	smm_mats_con_with_mlist
+	; J:\SRC\VISION\IMPROC\im_filter.c
+	im_filter_rows
+	im_filter_cols
+	; J:\SRC\VISION\IMPROC\canny.c
+	canny
+	; J:\SRC\VISION\CAMERA\par_proj.c
+	set_par_proj
+	par_proj_set
+	par_proj_get
+	par_proj_ray
+	vec3_par_proj_3d
+	vec3_par_proj_disp
+	vec3_pp3d_inplace
+	vec3_ppdisp_inplace
+	line3_par_proj_3d
+	line3_par_proj_disp
+	plane_par_proj_3d
+	; J:\SRC\VISION\POINT2\point2.c
+	point2_alloc
+	point2_make
+	point2_free
+	point2_copy
+	point2_number
+	; J:\SRC\VISION\GEOM\geom3_from2.c
+	geom3_from_geom2
+	; J:\SRC\VISION\GEOMSTAT\CONSTRAINT\state_eq.c
+	point3_equal
+	line3_equal
+	plane_equal
+	state_equal
+	; J:\SRC\VISION\IMPROC\im_create.c
+	imf_checquer
+	imf_rect
+	imf_ellipse
+	imf_subpix_ellipse
+	imf_subpix_ellipsoid
+	imf_subpix_algebraic
+	imf_subpix_sellipse
+	imf_delta
+	imf_unif_noise
+	im_corrupt
+	; J:\SRC\VISION\GEOMSTAT\STATE\state_geom.c
+	state_badpair
+	state_angle
+	state_dist
+	; J:\SRC\VISION\GEOMSTAT\STATE\state_crct.c
+	state_correct
+	state_correct_one
+	; J:\SRC\VISION\GEOM\geom_flat.c
+	geom_list_make_flat
+	geom_string_make_flat
+	; J:\SRC\VISION\LINE3\line3.c
+	line3_alloc
+	line3_make
+	line3_remake
+	line3_free
+	line3_copy
+	line3_clone
+	line3_negative
+	line3_negate
+	line3_separation
+	line3_min_separation
+	line3_point_on_line
+	; J:\SRC\VISION\STEREO\support.c
+	supp_alloc
+	match_strength
+	match_total_string_strength
+	match_local_string_strength
+	match_local_area_strength
+	match_set_strength_from_weight
+	match_set_match_strength
+	match_set_total_string
+	mlist_set_supp_type
+	; J:\SRC\VISION\PLANE\plane_lsq.c
+	plane_lsq
+	geom3_centroid
+	; J:\SRC\VISION\CURVE2\circ2.c
+	circ2_alloc
+	circ2_free
+	; J:\SRC\VISION\STEREO\select.c
+	es_select_fix_matches
+	es_supp_good_matches_only
+	; J:\SRC\VISION\IMPROC\im_max.c
+	imf_nmax
+	; J:\SRC\VISION\GEOMSTAT\STATE\state.c
+	state_alloc
+	state_free
+	state_add
+	state_make
+	state_delete
+	; J:\SRC\VISION\LINE2\line2_trns.c
+	line2_transform
+	line2_on_and_overlap
+	line2_coincident
+	; J:\SRC\VISION\GEOMSTAT\GEOM\gstat_pnt3.c
+	point3_basis
+	point3_correct
+	; J:\SRC\VISION\EDGE\edge_strings.c
+	edge_add_prop
+	es_add_to_prop_list
+	dist_to_pos2
+	es_closest2
+	es_closest_pos2
+	es_list_thres
+	er_edge_strings_thres
+	es_closest_ends
+	es_combine
+	es_list_cat
+	es_list_order
+	er_reference_strings
+	es_list_build_wx
+	es_format
+	; J:\SRC\VISION\CURVE2\curvprox.c
+	max_ratio
+	end_of_curve
+	poly_string_find_conics
+	poly_con_grow_conics
+	poly_strings_find_conics
+	; J:\SRC\VISION\GEOM\geom_label.c
+	geom_label_get
+	geom_getbylabel
+	; J:\SRC\VISION\CURVE2\con_test.c
+	conic_chi2
+	conic_param_between
+	conic_pos_thres
+	conic_threshold_string
+	geom2_mid_point
+	geom2_p1
+	geom2_p2
+	geom_mid_point_index_build
+	geom_from_index
+	conic_join
+	conic_compatible
+	; J:\SRC\VISION\CURVE2\circprox.c
+	conic_circ_grow
+	conic_circ_string
+	conic_circ_strings
+	; J:\SRC\VISION\LINE3\line3_fmt.c
+	line3_format
+	; J:\SRC\VISION\LINE2\line2.c
+	line2_alloc
+	line2_make
+	line2_free
+	line2_copy
+	line2_negative
+	line2_negate
+	line2_point_on_line
+	; J:\SRC\VISION\INDEX\windex.c
+	wx_alloc
+	wx_set
+	wx_get
+	wx_in_index
+	wx_free
+	wx_get_index
+	wx_get_pos2
+	wx_get_mid_pos2
+	; J:\SRC\VISION\IMPROC\im_scale.c
+	imf_minmax
+	imf_min
+	imf_max
+	imf_scale
+	im_gamma_scale_range_inplace
+	im_scale_range_inplace
+	imf_times_inplace
+	imf_add_inplace
+	imf_accum_inplace
+	imf_mean
+	imf_scale_inplace
+	im_locate_max
+	im_locate_interest
+	; J:\SRC\VISION\MATCH\match.c
+	match_alloc
+	match_make
+	match_copy
+	mlist_strongest
+	mlist_to2_exists
+	mlist_to2_list
+	match_free
+	mlist_free
+	; J:\SRC\VISION\GEOMSTAT\CONSTRAINT\state_on.c
+	point_on_line
+	point_on_plane
+	coplanar_2_lines
+	line_on_plane
+	state_on
+	; J:\SRC\VISION\CALIB\grid_match.c
+	grid_match
+	get_inter_lines
+	min_interx
+	min_intery
+	compute_vert_invariants
+	compute_horiz_invariants
+	; J:\SRC\VISION\STEREO\matchable.c
+	es_match_set_low_or_thres
+	es_match_set_hi_or_thres
+	es_match_set_grad_thres
+	es_match_set_con_ratio
+	es_mean_or
+	es_mean_con
+	orient_less_than_thres
+	orients_within_gradient_limit
+	es_match_orient
+	orient_abs
+	es_match_abs_orient
+	es_match_contrast
+	es_match_orandcon
+	; J:\SRC\VISION\IMPROC\conv_prof.c
+	prof_gauss_simple
+	prof_gauss
+	; J:\SRC\VISION\GEOMSTAT\CONSTRAINT\state_add.c
+	state_add_intersect
+	state_add_join
+	state_add_join3
+	; J:\SRC\VISION\GEOMSTAT\GEOM\gstat_ln2.c
+	line2_basis
+	line2_correct
+	; J:\SRC\VISION\CORNER\set_findex.c
+	er_set_findex
+	edge_pos
+	; J:\SRC\VISION\CALIB\cam_conv.c
+	conv_camera_int
+	conv_camera_ext
+	conv_camera_rel
+	store_camera_int
+	store_camera_ext
+	store_camera_rel
+	; J:\SRC\VISION\GEOMSTAT\BASIS\basis.c
+	basis2_alloc
+	basis2_format
+	basis3_alloc
+	basis3_format
+	basis_format
+	; J:\SRC\VISION\TRANSFORM\transform.c
+	mlist_comp_transform_vec3
+	mlist_comp_transform_pos3
+	transform_match_ok
+	transform_prune_mlist
+	match_pair_transform_vec3
+	mlist_best_transform_vec3
+	mlist_transform_vec3
+	; J:\SRC\VISION\IMPROC\im_suptype.c
+	im_sup_vtype
+	; J:\SRC\VISION\CALIB\cal_tsai.c
+	cam_cal_tsai
+	; J:\SRC\VISION\INDEX\wx_lists.c
+	wx_add_entry
+	wx_rm_entry
+	wx_delete_entry
+	wx_replace_entry
+	wx_duplicate_entry
+	wx_add_str2
+	wx_add_line
+	; J:\SRC\VISION\CURVE2\curvature.c
+	dds_curvature
+	es_curvature
+	dds_diffgeom
+	es_diffgeom
+	vec2_smooth
+	loop_smooth
+	endfix_smooth
+	str_smooth
+	; J:\SRC\VISION\UTIL\label.c
+	new_label
+	; J:\SRC\VISION\STEREO\disp_hist.c
+	disp_hist_set_params
+	disp_hist_set_image_dimension
+	sindex_disp_hist
+	er_disp_hist
+	; J:\SRC\VISION\CALIB\scal_smplx.c
+	cam_cal_stereo_smplx_params_set
+	cam_cal_stereo_simplex
+	cal_full_stereo_covar
+	cal_full_stereo_invcovar
+	; J:\SRC\VISION\STEREO\match_str.c
+	sm_make
+	sm_list_rm
+	str_mat_from_list
+	es_match_string_init
+	es_match_string
+	es_mlist_set_total_string_sup
+	es_choose_string_matches
+	; J:\SRC\VISION\POINT2\pnt2_rect.c
+	point2_rectify
+	point2_proj
+	; J:\SRC\VISION\CORNER\t_mat_cnr.c
+	left_corners_store
+	right_corners_store
+	stored_left_corners
+	stored_right_corners
+	temporal_corner_match
+	temp_backward_match
+	temp_forward_match
+	forward_search_func
+	backward_search_func
+	set_temporal_corner_matches
+	set_temporal_corner_match
+	; J:\SRC\VISION\IMPROC\im_gabor.c
+	gabor_profile
+	im_gabor
+	im_gabor_fft
+	im_fgabor
+	; J:\SRC\VISION\IMPROC\im_quad.c
+	im_quad
+	; J:\SRC\VISION\IMPROC\im_shade.c
+	im_shading
+	shade_conv
+	imz_fshade
+	imz_fshape
+	imz_fxgrad
+	imz_fygrad
+	; J:\SRC\VISION\IMPROC\im_sin.c
+	imf_sin
+	imz_sin
+	im_sin
+	imf_asin
+	imz_asin
+	im_asin
+	; J:\SRC\VISION\IMPROC\im_sqrt.c
+	imf_sqrt
+	imz_sqrt
+	im_sqrt
+	; J:\SRC\VISION\IMPROC\im_thresh.c
+	imi_thresh
+	imi_bthresh
+	imf_thresh
+	imf_bthresh
+	imz_thresh
+	imz_bthresh
+	im_thresh
+	im_bthresh
+	; J:\SRC\VISION\IMPROC\im_log.c
+	imf_log
+	imz_log
+	im_log
+	imf_exp
+	imz_exp
+	im_exp
+	; J:\SRC\VISION\IMPROC\im_bshift.c
+	im_bshift
+	; J:\SRC\VISION\IMPROC\im_add.c
+	imc_add
+	imi_add
+	imf_add
+	imz_add
+	im_add
+	; J:\SRC\VISION\IMPROC\im_complexify.c
+	imz_cmplx
+	; J:\SRC\VISION\IMPROC\im_rank.c
+	imi_rank
+	imf_rank
+	im_rank

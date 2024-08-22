@@ -1,0 +1,21 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: sys - Win32 Dynamic_Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINDOWS\TEMP\RSPD292.TMP" with contents
+[
+/nologo /G5 /MDd /W3 /Gm /GX /ZI /Od /I "\tina\include" /I "\tina\lib-pc\include" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_AFXEXT" /D "_COMPLEX_DEFINED" /D "__STRICT_ANSI__" /D "_PCC" /D "_DLL" /D "_MBCS" /D "__MEM_TRACE__" /D "_WINDLL" /D "_AFXDLL" /FR"WinDebug/" /Fo"WinDebug/" /Fd"WinDebug/" /FD /c 
+"C:\delarue\simulation\selsim\source\siminterface.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSPD292.TMP" 
+<h3>Output Window</h3>
+Compiling...
+siminterface.cpp
+
+</pre>
+</body>
+</html>

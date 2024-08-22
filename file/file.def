@@ -1,0 +1,113 @@
+; file.def : Declares the module parameters for the DLL.
+
+LIBRARY      FILE
+DESCRIPTION  'FILE Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+	;
+	; J:\SRC\FILE\EDGES\wisp_write.c
+	wisp_write_edge_string
+	wisp_write_edges_stream
+	wisp_write_edges
+	; J:\SRC\FILE\GEOM\geom2_read.c
+	geom2_read_fp
+	geom2_read
+	line2_read_geom
+	; J:\SRC\FILE\CAMERA\distort_w.c
+	rdist_write_fp
+	; J:\SRC\FILE\IFF\iff_io.c
+	iff_read_head
+	iff_read_image
+	iff_write_head
+	iff_write_image
+	; J:\SRC\FILE\GEOM\ffg_read.c
+	match_cliche_read
+	ffg_read_file_fp
+	ffg_read_file
+	; J:\SRC\FILE\CAMERA\cam_g3_rd.c
+	cal_geom3_list_read
+	; J:\SRC\FILE\EDGES\edges_w.c
+	edge_write
+	edges_write_stream
+	edges_write_file
+	; J:\SRC\FILE\GEOM\ffg_new_read.c
+	match_cliche_new_read
+	ffg_new_read_file_stream
+	ffg_new_read_file
+	; J:\SRC\FILE\GEOM\geom3_wrt.c
+	geom3_write_fp
+	geom3_write
+	line3_write_geom
+	; J:\SRC\FILE\UTIL\file_io.c
+	fclose_2
+	fread_2
+	fread_fields
+	fread_imrect_data
+	fread_padding
+	fwrite_2
+	fwrite_fields
+	fwrite_imrect_data
+	fwrite_padding
+	fopen_2
+	; J:\SRC\FILE\EDGES\edges_read.c
+	edges_read_stream
+	edges_read_file
+	; J:\SRC\FILE\RAW\raw_io.c
+	raw_read_image
+	raw_write_image
+	; J:\SRC\FILE\RAW\raw_read_fd.c
+	raw_fd_read_image
+	; J:\SRC\FILE\CAMERA\view_prms.c
+	view_params_write_stream
+	view_params_read_stream
+	view_params_read
+	view_params_write
+	; J:\SRC\FILE\MATRIX\covar_r.c
+	covar_read
+	covar_read_fp
+	; J:\SRC\FILE\MATRIX\matrix_r.c
+	dmatrix_read_fp
+	; J:\SRC\FILE\UTIL\file_util.c
+	dirname
+	environ_pathname_get
+	file_readable
+	strip_extensions
+	strip_spaces
+	system_exit_status
+	; J:\SRC\FILE\CAMERA\cam_io.c
+	cam_read_stream
+	cam_read
+	cam_write_stream
+	cam_write
+	; J:\SRC\FILE\MATRIX\covar_w.c
+	covar_write_fp
+	covar_write
+	; J:\SRC\FILE\MATRIX\matrix_w.c
+	dmatrix_write_fp
+	dmatrix_write
+	; J:\SRC\FILE\GEOM\geom2_wrt.c
+	line2_fprint
+	conic2_fprint
+	geom2_write_fp
+	geom2_write
+	line2_write_geom
+	; J:\SRC\FILE\CAMERA\distort_r.c
+	rdist_read_fp
+	; J:\SRC\FILE\GEOM\geom3_read.c
+	geom3_read_fp
+	geom3_read
+	line3_read_geom
+	; J:\SRC\FILE\GEOM\ffg_new_wrt.c
+	ffg_new_write_file_stream
+	ffg_new_write_file
+	; J:\SRC\FILE\GEOM\ffg_write.c
+	ffg_write_file_fp
+	ffg_write_file
+	; J:\SRC\FILE\AIFF\aiff_io.c
+	aiff_read_head
+	aiff_read_image_stream
+	aiff_read_image
+	aiff_write_head
+	aiff_write_image_stream
+	aiff_write_image

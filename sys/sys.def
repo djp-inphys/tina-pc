@@ -1,0 +1,499 @@
+; sys.def : Declares the module parameters for the DLL.
+
+LIBRARY      SYS
+DESCRIPTION  'SYS Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+	;
+	; J:\SRC\SYS\COMPLEX\complex.c
+	cmplx_sum
+	cmplx_diff
+	cmplx_minus
+	cmplx_prod
+	cmplx_cprod
+	cmplx_times
+	cmplx
+	cmplx_zero
+	cmplx_unit
+	cmplx_conj
+	cmplx_div
+	cmplx_mod
+	cmplx_sqrmod
+	cmplx_arg
+	cmplx_phase
+	cmplx_sqr
+	cmplx_sqrt
+	cmplx_log
+	cmplx_exp
+	cmplx_sin
+	cmplx_asin
+	cmplx_cis
+	; J:\SRC\SYS\GEN\string.c
+	string_append
+	string_alloc_append
+	string_copy
+	readline
+	read_into_int
+	read_into_short
+	read_into_float
+	read_into_double
+	read_into_string
+	; J:\SRC\SYS\GRAPH\cliques.c
+	cliques_get
+	max_clique_get
+	; J:\SRC\SYS\GEN\ts_save_load.c
+	ts_version_get
+	ts_fsave
+	ts_save
+	ts_fload
+	ts_load
+	ts_table_save
+	ts_table_load
+	tdi_xref
+	ts_version_translate
+	ts_upgrade_data
+	; J:\SRC\SYS\GEN\message.c
+	message_default_print
+	message_set_print
+	message_get_print
+	message
+	; J:\SRC\SYS\LISTS\lists.c
+	link_alloc
+	ref_set
+	list_make
+	list_get_end
+	list_append
+	link_addtostart
+	ref_addtostart
+	list_addtostart
+	link_addtoend
+	ref_addtoend
+	list_addtoend
+	link_addafter
+	link_rm_next_el
+	link_rm_el
+	ref_free
+	link_rm_next
+	link_rm
+	list_rm_el
+	list_rm_ref
+	list_rm_links
+	list_rm_links_on_type
+	list_rm_links_on_func
+	list_free_refs
+	list_rm
+	list_list_rm
+	link_copy
+	list_copy
+	list_reverse
+	list_reversecopy
+	list_apply_func
+	list_get_min
+	link_get_by_ref
+	link_get_by_type
+	list_add_sorted
+	list_of
+	list_query
+	; J:\SRC\SYS\GEN\serialise.c
+	ts_serialise_end
+	serialise_item
+	serialise_tagged_item
+	serialise_tagged_sub_item
+	ts_serialise
+	ts_serialise_gen
+	; J:\SRC\SYS\GEN\swap.c
+	set_swapping_ts
+	longd_swap
+	long_swap
+	word_swap
+	short_swap
+	; J:\SRC\SYS\GEN\ralloc.c
+	ralloc_new_blocked
+	ralloc_start_blocked
+	ralloc_end_blocked
+	ralloc_free_blocked
+	ralloc
+	rfree
+	; J:\SRC\SYS\GEN\var.c
+	var_size
+	; J:\SRC\SYS\IMAGE\region.c
+	roi_alloc
+	roi_copy
+	roi_update
+	roi_inter
+	roi_inregion
+	roi_fill
+	; J:\SRC\SYS\GEN\deserialise.c
+	deserialise_parse
+	deserialise_item
+	deserialise_tagged_item
+	deserialise_tagged_sub_item
+	ts_deserialise
+	ts_deserialise_gen
+	; J:\SRC\SYS\IMAGE\image.c
+	im_alloc
+	im_wrap_contig
+	im_copy_inplace
+	im_subim
+	im_cast
+	im_copy
+	im_free
+	im_shift
+	; J:\SRC\SYS\GEN\tina_int.c
+	tina_int
+	tina_rint
+	; J:\SRC\SYS\GEN\tsprint.c
+	ts_print
+	ts_print_gen
+	; J:\SRC\SYS\GEN\null.c
+	null_function
+	; J:\SRC\SYS\DYNAMIC\dcopy.c
+	dvector_uccopy
+	darray_uccopy
+	dlower_uccopy
+	dupper_uccopy
+	dvector_ccopy
+	darray_ccopy
+	dlower_ccopy
+	dupper_ccopy
+	dvector_scopy
+	darray_scopy
+	dlower_scopy
+	dupper_scopy
+	dvector_icopy
+	darray_icopy
+	dlower_icopy
+	dupper_icopy
+	dvector_fcopy
+	darray_fcopy
+	dlower_fcopy
+	dupper_fcopy
+	dvector_dcopy
+	darray_dcopy
+	dlower_dcopy
+	dupper_dcopy
+	; J:\SRC\SYS\IMAGE\imput.c
+	im_put_pix
+	im_put_ptr
+	im_put_pixf
+	im_pixf_inc
+	im_pixf_dec
+	im_put_pixz
+	im_put_row
+	im_put_col
+	im_put_rowf
+	im_put_colf
+	im_put_rowz
+	im_put_colz
+	im_put_pos_diag
+	im_put_neg_diag
+	im_put_pos_diagf
+	im_put_neg_diagf
+	; J:\SRC\SYS\GEN\error.c
+	error_default_print
+	error_set_print
+	error_get_print
+	error
+	errorf
+	; J:\SRC\SYS\GEN\tsfree.c
+	repeatp_checker_off
+	repeatp_checker_on
+	repeatp_checking_get
+	repeatp_checking_set
+	repeatp_checker
+	ts_free_sub_item
+	ts_free
+	ts_free_gen
+	; J:\SRC\SYS\LISTS\sort.c
+	sort_keys_simple
+	sort_list
+	sort_ddlist
+	; J:\SRC\SYS\GEN\help.c
+	print_help
+	; J:\SRC\SYS\GEN\mprintf.c
+	mprintf
+	; J:\SRC\SYS\DYNAMIC\icopy.c
+	ivector_uccopy
+	iarray_uccopy
+	ilower_uccopy
+	iupper_uccopy
+	ivector_ccopy
+	iarray_ccopy
+	ilower_ccopy
+	iupper_ccopy
+	ivector_scopy
+	iarray_scopy
+	ilower_scopy
+	iupper_scopy
+	ivector_icopy
+	iarray_icopy
+	ilower_icopy
+	iupper_icopy
+	ivector_fcopy
+	iarray_fcopy
+	ilower_fcopy
+	iupper_fcopy
+	ivector_dcopy
+	iarray_dcopy
+	ilower_dcopy
+	iupper_dcopy
+	; J:\SRC\SYS\LISTS\util.c
+	list_length
+	dd_list_length
+	ddstr_length
+	proplist_pprint
+	list_nth
+	ddlist_nth
+	; J:\SRC\SYS\LISTS\reclist.c
+	reclist_list_apply
+	reclist_string_apply
+	reclist_apply
+	reclist_list_rm_entry
+	reclist_string_rm_entry
+	reclist_rm_entry
+	reclist_list_update
+	reclist_string_update
+	reclist_update
+	reclist_list_flat
+	reclist_string_flat
+	reclist_flat
+	reclist_list_copy
+	reclist_string_copy
+	reclist_copy
+	reclist_list_free
+	reclist_string_free
+	reclist_free
+	; J:\SRC\SYS\LISTS\ddstr.c
+	ddstr_count
+	ddstr_free
+	ddstr_rm_links
+	ddstr_rm
+	ddstr_link_get_by_ref
+	ddstr_reverse
+	ddstr_copy
+	ddstr_set_type
+	ddstr_nth_point
+	ddstr_mid_point
+	ddstr_apply_func
+	ddstr_get_min
+	; J:\SRC\SYS\GENERIC\label.c
+	new_label
+	; J:\SRC\SYS\DYNAMIC\fcopy.c
+	fvector_uccopy
+	farray_uccopy
+	flower_uccopy
+	fupper_uccopy
+	fvector_ccopy
+	farray_ccopy
+	flower_ccopy
+	fupper_ccopy
+	fvector_scopy
+	farray_scopy
+	flower_scopy
+	fupper_scopy
+	fvector_icopy
+	farray_icopy
+	flower_icopy
+	fupper_icopy
+	fvector_fcopy
+	farray_fcopy
+	flower_fcopy
+	fupper_fcopy
+	fvector_dcopy
+	farray_dcopy
+	flower_dcopy
+	fupper_dcopy
+	; J:\SRC\SYS\DYNAMIC\ccopy.c
+	cvector_uccopy
+	carray_uccopy
+	clower_uccopy
+	cupper_uccopy
+	cvector_ccopy
+	carray_ccopy
+	clower_ccopy
+	cupper_ccopy
+	cvector_scopy
+	carray_scopy
+	clower_scopy
+	cupper_scopy
+	cvector_icopy
+	carray_icopy
+	clower_icopy
+	cupper_icopy
+	cvector_fcopy
+	carray_fcopy
+	clower_fcopy
+	cupper_fcopy
+	cvector_dcopy
+	carray_dcopy
+	clower_dcopy
+	cupper_dcopy
+	; J:\SRC\SYS\LISTS\strings.c
+	str_alloc
+	str_make
+	str_mid_point
+	str_divide
+	str_free
+	str_rm_links
+	str_rm
+	str_rm_only_str
+	str_segment
+	str_link_get_by_ref
+	str_list_get_by_ref
+	str_reverse
+	str_combine
+	str_copy
+	str_clone
+	str_apply_func
+	str_get_min
+	str_get_min_dist
+	str_list_get_min
+	str_rm_list
+	str_length
+	; J:\SRC\SYS\DYNAMIC\ts_ndynamic.c
+	ts_nralloc_fn
+	ts_ralloc_fn
+	ts_nvector_alloc_fn
+	ts_narray_alloc_fn
+	ts_nlower_alloc_fn
+	ts_nupper_alloc_fn
+	; J:\SRC\SYS\IMAGE\imget.c
+	im_get_pix
+	im_get_ptr
+	im_get_pixf
+	im_get_pixz
+	im_sub_pix
+	im_sub_pixf
+	im_sub_pixqf
+	im_sub_pixz
+	im_get_row
+	im_get_col
+	im_get_rowf
+	im_get_colf
+	im_get_rowz
+	im_get_colz
+	im_get_pos_diag
+	im_get_neg_diag
+	im_get_pos_diagf
+	im_get_neg_diagf
+	; J:\SRC\SYS\IMAGE\imfloatfns.c
+	im_get_quadmaxf
+	im_get_quadinterpf
+	; J:\SRC\SYS\GENERIC\generic.c
+	generic_alloc
+	generic_make
+	generic_free
+	generic_copy
+	generic_number
+	; J:\SRC\SYS\GEN\tstruct_info.c
+	tina_data_info_array
+	get_tina_data_info_array
+	; J:\SRC\SYS\GEN\pipe_read.c
+	pipe_read
+	; J:\SRC\SYS\PAIR\pair.c
+	pair_alloc
+	pair_make
+	; J:\SRC\SYS\LISTS\ddlists.c
+	dd_link_alloc
+	dd_ref_set
+	dd_list_make
+	dd_get_end
+	dd_get_start
+	dd_append
+	dd_link_addtostart
+	dd_ref_addtostart
+	dd_link_addtoend
+	dd_ref_addtoend
+	dd_list_addtoend
+	dd_link_addafter
+	dd_link_rm_next_el
+	dd_link_rm_el
+	dd_ref_free
+	dd_link_rm_next
+	dd_link_rm
+	dd_list_rm_el
+	dd_link_get_by_ref
+	dd_link_get_by_type
+	dd_list_rm_ref
+	dd_list_rm_links
+	dd_list_rm_links_on_type
+	dd_list_rm_links_on_func
+	dd_list_free_refs
+	dd_list_rm
+	dd_link_copy
+	dd_list_copy
+	dd_list_reverse
+	dd_list_reversecopy
+	dd_apply_func
+	dd_get_min
+	dd_nth_el
+	dd_list_of
+	; J:\SRC\SYS\DYNAMIC\ndynamic.c
+	nvector_alloc
+	nvector_copy
+	nvector_copy_inplace
+	nvector_zero_inplace
+	nvector_free
+	narray_alloc
+	narray_copy
+	narray_copy_inplace
+	narray_zero_inplace
+	narray_free
+	nlower_alloc
+	nlower_copy
+	nlower_copy_inplace
+	nlower_zero_inplace
+	nlower_free
+	nupper_alloc
+	nupper_copy
+	nupper_copy_inplace
+	nupper_zero_inplace
+	nupper_free
+	; J:\SRC\SYS\GEN\io.c
+	fwrite_ts
+	fread_ts
+	buffwrite_ts
+	buffread_ts
+	; J:\SRC\SYS\LISTS\proplist.c
+	proplist_add
+	proplist_addifnp
+	prop_get
+	prop_present
+	prop_ref_present
+	prop_first
+	prop_set
+	proplist_copy
+	proplist_rm
+	proplist_rm_by_ref
+	proplist_free
+	proplist_free_by_ref
+	proplist_rmlist
+	proplist_rm_first
+	proplist_freelist
+	; J:\SRC\SYS\GRAPH\graph.c
+	graph_node_alloc
+	graph_node_set
+	graph_make_list
+	graph_ref
+	graph_recover_list
+	graph_consistent_with
+	graph_list_consistent
+	graph_list_set_status
+	; J:\SRC\SYS\DYNAMIC\vdynamic.c
+	ndim_array_alloc
+	ndim_array_free
+	vdim_array_alloc
+	vdim_array_free
+	; J:\SRC\SYS\GEN\format.c
+	default_print
+	default_print_sw
+	format_set_print
+	format_get_print
+	format_get_print_sw
+	format_set_print_sw
+	format_set_flush
+	format_get_flush
+	format
+	format_sw
+	format_flush

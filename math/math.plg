@@ -1,0 +1,113 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: math - Win32 Dynamic_Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINDOWS\TEMP\RSP62F1.TMP" with contents
+[
+/o"WinDebug/math.bsc" 
+".\WinDebug\bres_line.sbr"
+".\WinDebug\cholesky.sbr"
+".\WinDebug\covar.sbr"
+".\WinDebug\dprog.sbr"
+".\WinDebug\eigen.sbr"
+".\WinDebug\eqn.sbr"
+".\WinDebug\fmt_shape.sbr"
+".\WinDebug\fmt_vtype.sbr"
+".\WinDebug\fourier.sbr"
+".\WinDebug\geom2.sbr"
+".\WinDebug\geom3.sbr"
+".\WinDebug\hull2.sbr"
+".\WinDebug\hull3.sbr"
+".\WinDebug\hyper.sbr"
+".\WinDebug\ics.sbr"
+".\WinDebug\imget.sbr"
+".\WinDebug\ipos.sbr"
+".\WinDebug\ivec.sbr"
+".\WinDebug\mat.sbr"
+".\WinDebug\mat2.sbr"
+".\WinDebug\mat3.sbr"
+".\WinDebug\mat4.sbr"
+".\WinDebug\mat_add.sbr"
+".\WinDebug\mat_alloc.sbr"
+".\WinDebug\mat_build.sbr"
+".\WinDebug\mat_cast.sbr"
+".\WinDebug\mat_check.sbr"
+".\WinDebug\mat_chol.sbr"
+".\WinDebug\mat_copy.sbr"
+".\WinDebug\mat_eigen.sbr"
+".\WinDebug\mat_fill.sbr"
+".\WinDebug\mat_fmt.sbr"
+".\WinDebug\mat_free.sbr"
+".\WinDebug\mat_get.sbr"
+".\WinDebug\mat_gs.sbr"
+".\WinDebug\mat_invert.sbr"
+".\WinDebug\mat_invsd.sbr"
+".\WinDebug\mat_io.sbr"
+".\WinDebug\mat_itimes.sbr"
+".\WinDebug\mat_lu.sbr"
+".\WinDebug\mat_mat2.sbr"
+".\WinDebug\mat_mat3.sbr"
+".\WinDebug\mat_minus.sbr"
+".\WinDebug\mat_mult.sbr"
+".\WinDebug\mat_prod.sbr"
+".\WinDebug\mat_put.sbr"
+".\WinDebug\mat_sub.sbr"
+".\WinDebug\mat_svd.sbr"
+".\WinDebug\mat_tensor.sbr"
+".\WinDebug\mat_times.sbr"
+".\WinDebug\mat_transp.sbr"
+".\WinDebug\mat_trnsf2.sbr"
+".\WinDebug\mat_trnsf3.sbr"
+".\WinDebug\mat_unit.sbr"
+".\WinDebug\mat_util.sbr"
+".\WinDebug\mat_vprod.sbr"
+".\WinDebug\math_util.sbr"
+".\WinDebug\matr_invert.sbr"
+".\WinDebug\matrix_svd.sbr"
+".\WinDebug\newt_raph.sbr"
+".\WinDebug\pentadiag.sbr"
+".\WinDebug\polygon.sbr"
+".\WinDebug\proj2.sbr"
+".\WinDebug\proj3.sbr"
+".\WinDebug\quat.sbr"
+".\WinDebug\rand.sbr"
+".\WinDebug\rot2.sbr"
+".\WinDebug\rot3.sbr"
+".\WinDebug\simplexmin.sbr"
+".\WinDebug\solve.sbr"
+".\WinDebug\svd.sbr"
+".\WinDebug\symm_line.sbr"
+".\WinDebug\transform2.sbr"
+".\WinDebug\transform3.sbr"
+".\WinDebug\univmin.sbr"
+".\WinDebug\vec.sbr"
+".\WinDebug\vec2.sbr"
+".\WinDebug\vec3.sbr"
+".\WinDebug\vec4.sbr"
+".\WinDebug\vec_apply.sbr"
+".\WinDebug\vec_combine.sbr"
+".\WinDebug\vec_format.sbr"
+".\WinDebug\vec_geom.sbr"
+".\WinDebug\vec_get.sbr"
+".\WinDebug\vec_image.sbr"
+".\WinDebug\vec_max.sbr"
+".\WinDebug\vec_set.sbr"
+".\WinDebug\vector.sbr"]
+Creating command line "bscmake.exe @C:\WINDOWS\TEMP\RSP62F1.TMP"
+Creating browse info file...
+Microsoft Browse Information Maintenance Utility Version 6.00.8168
+Copyright (C) Microsoft Corp 1990-1998. All rights reserved.
+
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+math.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

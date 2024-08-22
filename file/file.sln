@@ -1,0 +1,40 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "file", "file.vcproj", "{2FCD176C-5743-4338-90AA-F5DEF9867FFE}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "math", "..\math\math.vcproj", "{ABE4C154-A353-4879-90D6-B389DE717818}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccProjectUniqueName0 = file.vcproj
+		SccProjectName0 = \u0022$/file\u0022,\u0020QQAAAAAA
+		SccLocalPath0 = .
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectUniqueName1 = ..\\math\\math.vcproj
+		SccProjectName1 = \u0022$/math\u0022,\u0020WAAAAAAA
+		SccLocalPath1 = ..\\math
+		SccProvider1 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Dynamic_Debug = Dynamic_Debug
+		Dynamic_Release = Dynamic_Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{2FCD176C-5743-4338-90AA-F5DEF9867FFE}.Dynamic_Debug.ActiveCfg = Dynamic_Debug|Win32
+		{2FCD176C-5743-4338-90AA-F5DEF9867FFE}.Dynamic_Debug.Build.0 = Dynamic_Debug|Win32
+		{2FCD176C-5743-4338-90AA-F5DEF9867FFE}.Dynamic_Release.ActiveCfg = Dynamic_Release|Win32
+		{2FCD176C-5743-4338-90AA-F5DEF9867FFE}.Dynamic_Release.Build.0 = Dynamic_Release|Win32
+		{ABE4C154-A353-4879-90D6-B389DE717818}.Dynamic_Debug.ActiveCfg = Dynamic_Debug|Win32
+		{ABE4C154-A353-4879-90D6-B389DE717818}.Dynamic_Debug.Build.0 = Dynamic_Debug|Win32
+		{ABE4C154-A353-4879-90D6-B389DE717818}.Dynamic_Release.ActiveCfg = Dynamic_Release|Win32
+		{ABE4C154-A353-4879-90D6-B389DE717818}.Dynamic_Release.Build.0 = Dynamic_Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,53 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: file - Win32 Dynamic_Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINDOWS\TEMP\RSP6185.TMP" with contents
+[
+\tina\lib-pc\vision\WinDebug\vision.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"WinDebug/file.pdb" /debug /machine:I386 /def:".\file.def" /out:"WinDebug/file.dll" /implib:"WinDebug/file.lib" 
+".\WinDebug\aiff_io.obj"
+".\WinDebug\cam_g3_rd.obj"
+".\WinDebug\cam_io.obj"
+".\WinDebug\covar_r.obj"
+".\WinDebug\covar_w.obj"
+".\WinDebug\distort_r.obj"
+".\WinDebug\distort_w.obj"
+".\WinDebug\edges_read.obj"
+".\WinDebug\edges_w.obj"
+".\WinDebug\ffg_new_read.obj"
+".\WinDebug\ffg_new_wrt.obj"
+".\WinDebug\ffg_read.obj"
+".\WinDebug\ffg_write.obj"
+".\WinDebug\file_io.obj"
+".\WinDebug\file_util.obj"
+".\WinDebug\geom2_read.obj"
+".\WinDebug\geom2_wrt.obj"
+".\WinDebug\geom3_read.obj"
+".\WinDebug\geom3_wrt.obj"
+".\WinDebug\iff_io.obj"
+".\WinDebug\matrix_r.obj"
+".\WinDebug\matrix_w.obj"
+".\WinDebug\raw_io.obj"
+".\WinDebug\raw_read_fd.obj"
+".\WinDebug\view_prms.obj"
+".\WinDebug\wisp_write.obj"
+"..\vision\math.lib"
+"..\math\sys.lib"
+".\vision.lib"
+]
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSP6185.TMP"
+<h3>Output Window</h3>
+Linking...
+   Creating library WinDebug/file.lib and object WinDebug/file.exp
+
+
+
+<h3>Results</h3>
+file.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
