@@ -1,0 +1,59 @@
+{
+  "tools": [
+    {
+      "name": "tina.image.smooth",
+      "description": "Gaussian smooth an image",
+      "command": [
+        "tina",
+        "image",
+        "smooth",
+        "{input_path}",
+        "--sigma",
+        "{sigma}",
+        "--precision",
+        "{precision}",
+        "--output",
+        "{output}",
+        "--json-output"
+      ],
+      "parameters": {
+        "input_path": { "type": "string" },
+        "sigma": { "type": "number", "default": 1.5 },
+        "precision": { "type": "number", "default": 0.01 },
+        "output": { "type": "string" }
+      }
+    },
+    {
+      "name": "tina.image.canny",
+      "description": "Detect edges using Canny algorithm",
+      "command": [
+        "tina",
+        "image",
+        "canny",
+        "{input_path}",
+        "--sigma",
+        "{sigma}",
+        "--precision",
+        "{precision}",
+        "--low",
+        "{low}",
+        "--high",
+        "{high}",
+        "--length-thresh",
+        "{length_thresh}",
+        "--output",
+        "{output}",
+        "--json-output"
+      ],
+      "parameters": {
+        "input_path": { "type": "string" },
+        "sigma": { "type": "number", "default": 1.0 },
+        "precision": { "type": "number", "default": 0.01 },
+        "low": { "type": "number", "default": 0.5 },
+        "high": { "type": "number", "default": 1.5 },
+        "length_thresh": { "type": "integer", "default": 10 },
+        "output": { "type": "string" }
+      }
+    }
+  ]
+}
